@@ -51,3 +51,4 @@ Ensure that the SQL Server is set up beforehand (refer to the Getting Started)
 ### Command Line Switches
 * Update Quotas
 ```FSRMTrends.exe /updateQuotas```
+   * Important note: Quotas are not updated on any sort of schedule automatically. An easy method to run this flag on a schedule is to use task scheduler.
