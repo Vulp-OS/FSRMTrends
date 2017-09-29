@@ -22,22 +22,24 @@ These instructions will get you a copy of the project up and running on your loc
 #### Setting up the SQL Database
 1. Create a new database with whatever name you intend to use ```eg: FSRMTrendData```
 
-2.
-   * Use Visual Studio to publish the included SQL Database Project
-   * OR Create the following tables:
+2. Grant the user you intend to use access to the database
+
+3. Populate the Database
+   * **EITHER** Use Visual Studio to publish the included SQL Database Project
+   * **OR** Create the following tables:
       * Dates
-   	     * Date (PK, datetime, notnull)
+         * Date (PK, datetime, notnull)
       * QuotaPaths
-   	     * QuotaPath (PK, nvarchar(255), not null)
+         * QuotaPath (PK, nvarchar(255), not null)
       * Sizes
-   	     * QuotaPaths (PK, FK, nvarchar(255), not null)
-   	     * Date (PK, FK, datetime, not null)
-   	     * Size (Numeric(38,0), null)
+        * QuotaPaths (PK, FK, nvarchar(255), not null)
+        * Date (PK, FK, datetime, not null)
+        * Size (Numeric(38,0), null)
       * Usages
-   	     * QuotaPath (PK, FK, nvarchar(255), not null)
-   	     * Date (PK, FK, datetime, not null)
-   	     * UsageBytes (numeric(38,0, null)
-3. Determine the proper SQL connection string for your use case (including authentication)
+        * QuotaPath (PK, FK, nvarchar(255), not null)
+        * Date (PK, FK, datetime, not null)
+        * UsageBytes (numeric(38,0, null)
+4. Determine the proper SQL connection string for your use case (including authentication)
 
 ## Usage
 
